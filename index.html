@@ -139,7 +139,7 @@
         .enter()
         .append("rect")
         .attr("id", function (d) {
-          return y(d.id);
+          return d.id;
         })
         .attr("x", function (d) {
           return x(d.Country);
