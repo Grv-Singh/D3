@@ -10,9 +10,7 @@
   <span class="box">
     <form action="#" method="post" class="demoForm" id="demoForm">
       <fieldset>
-        <legend>Choice</legend>
-
-        <p>Choose Disease(s) to enlighten</p>
+        <legend>Choose Disease(s) to enlighten</legend>
 
         <p>
           <label
@@ -40,7 +38,7 @@
               value="cholera"
               onclick="toggle(3);"
             />
-            visit Cholera</label
+            Cholera</label
           >
           <label
             ><input
@@ -86,9 +84,9 @@
 <script>
   function toggle(id) {
     if ($("#" + id).is(":visible")) {
-      $("#" + id).hide();
+      $("#" + id).hide(1000);
     } else {
-      $("#" + id).show();
+      $("#" + id).show(1000);
     }
   }
 
