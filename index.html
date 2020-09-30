@@ -138,7 +138,9 @@
         .data(data)
         .enter()
         .append("rect")
-        .attr("id", d.id)
+        .attr("id", , function (d) {
+          return y(d.id);
+        })
         .attr("x", function (d) {
           return x(d.Country);
         })
