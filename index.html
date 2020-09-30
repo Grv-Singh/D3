@@ -91,9 +91,9 @@
 <script>
   function toggle(id) {
     if ($("#" + id).is(":visible")) {
-      $("#" + id).slideDown(1000);
+      $("#" + id).hide("slide", { direction: "bottom" }, 1000);
     } else {
-      $("#" + id).slideUp(1000);
+      $("#" + id).hide("slide", { direction: "top" }, 1000);
     }
   }
 
