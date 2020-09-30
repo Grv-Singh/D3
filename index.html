@@ -3,7 +3,7 @@
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
 <div>
@@ -84,6 +84,14 @@
   </span>
 </div>
 <script>
+  function toggle(id) {
+    if ($("#" + id).is(":visible")) {
+      $("#" + id).hide();
+    } else {
+      $("#" + id).show();
+    }
+  }
+
   // set the dimensions and margins of the graph
   var margin = { top: 30, right: 30, bottom: 70, left: 60 },
     width = 460 - margin.left - margin.right,
@@ -130,6 +138,7 @@
         .data(data)
         .enter()
         .append("rect")
+        .attr("id", d.id)
         .attr("x", function (d) {
           return x(d.Country);
         })
