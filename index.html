@@ -22,8 +22,8 @@ var margin = {top: 100, right: 0, bottom: 0, left: 0},
 // append the svg object
 var svg = d3.select("#my_dataviz")
   .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("width", width + 300 + margin.left + margin.right)
+    .attr("height", height + 200 + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
 
