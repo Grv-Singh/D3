@@ -27,7 +27,7 @@ var svg = d3.select("#my_dataviz")
   .append("g")
     .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
 
-d3.csv("https://2020.igem.org/wiki/index.php?title=Template:IISER-Tirupati_India/data.csv&action=raw", function(data) {
+d3.csv("raw.githubusercontent.com/iGEM-IISER-Tirupati/2020-Editable/master/AMR-graph.csv", function(data) {
 
   // X scale: common for 2 data series
   var x = d3.scaleBand()
